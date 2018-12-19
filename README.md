@@ -1,4 +1,4 @@
-# Retrorama-Splash-Screen
+# Phill Doodles's comics
 ´´´´´´´´´´´´´´´´
 # In loving memory of Stan Lee. A true inspiration and without his legacy, this theme won't be so nostalgic. Rest in peace...
 
