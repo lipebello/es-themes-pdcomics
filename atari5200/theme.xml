@@ -1,0 +1,71 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./sys.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+  <zIndex>10</zIndex>
+ </image>
+</view>
+
+<view name="system, basic, detailed, grid, video">
+ <image name="logo">
+  <path>./logo.png</path>
+  <origin>.5 .5</origin>
+  <pos>.335 .11</pos>
+  <maxSize>.255 .22</maxSize>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+ <image name="console" extra="true">
+  <path>./console.png</path>
+<origin>.5 .5</origin>
+<pos>0.8585 0.7903</pos>
+<maxSize>0.22 0.268</maxSize>
+ </image>
+ 
+ 
+  <image name="cart" extra="true">
+  <path>./cart.png</path>
+<origin>.5 .5</origin>
+<pos>0.6095 0.55</pos>
+<size>0.159 0.150</size>
+<zIndex>10</zIndex>
+ </image>
+ 
+ <image name="md_image">
+	<origin>.5 .5</origin>
+	<pos>0.8392 0.4245</pos>
+	<maxSize>0.258 0.403</maxSize>
+</image>
+
+</view>
+
+
+<feature supported="video">
+<view name="video">
+
+<video name="md_video">
+<origin>.5 .5</origin>
+<pos>0.8392 0.4245</pos>
+<maxSize>0.258 0.403</maxSize>
+<delay>1</delay>
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+</video>
+
+<image name="md_marquee">
+<origin>.5 .5</origin>
+<pos>0.8582 0.1185</pos>
+<maxSize>0.22 0.15</maxSize>
+</image>
+
+</view>
+</feature>
+
+</theme>
