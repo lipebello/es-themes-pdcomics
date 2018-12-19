@@ -1,0 +1,269 @@
+<!--
+theme name:     Retrorama
+version:        1.75
+author:         Filipe Bello
+email:          filipebello@yahoo.com.br
+website:        
+license:        creative commons CC-BY-NC-SA
+Based on: 
+1.0 to 1.3 		- Tutorial from Matt Kennedy, you can view it on https://github.com/RetroPie/RetroPie-Setup/wiki/Creating-Your-Own-EmulationStation-Theme
+1.4	and foward	- Basevid theme from Matt Kennedy. This dude rock!
+font: comic.otf
+-->
+
+<theme>
+
+	<formatVersion>4</formatVersion>
+	
+	<!-- Carousel (Hide white bar and number of games-->
+<feature supported="carousel">
+
+<view name="system">
+
+
+<carousel name="systemcarousel">
+	<origin>.5 .5</origin>
+	<pos>.5055 .48</pos>
+	<size>.55 .6</size>
+	<color>F1F1F100</color>
+	<logoScale>1.5 1</logoScale>
+	<logoSize>.35 .3</logoSize>
+	<maxLogoCount>1</maxLogoCount>
+	<zIndex>110</zIndex>
+</carousel>
+
+<text name="systemInfo">
+    <fontPath>./_art/comic.otf</fontPath>
+	<alignment>left</alignment>
+	<backgroundColor>00000000</backgroundColor>
+	<color>c22d34</color>
+	<pos>.01 .01</pos>
+	<size>0.980 0.050</size>
+	<fontSize>0.03</fontSize>
+	<zIndex>100</zIndex>
+</text>
+
+</view>
+</feature>
+<!-- Carousel -->
+
+<view name="system">
+
+<image name="sysframe" extra="true">
+	<path>./_art/bg.png</path>
+	<color>FFFFFF</color>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>101</zIndex>
+</image>
+
+<image name="sysinfobg" extra="true">
+	<path>./_art/bg2.png</path>
+	<color>FFFFFF</color>
+	<size>.263 .07</size>
+	<pos>0 0</pos>
+	<zIndex>99</zIndex>
+</image>
+
+<helpsystem name="help">
+    <textColor>232323</textColor>
+    <iconColor>232323</iconColor>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.025</fontSize>
+	<pos>.03 .93</pos>
+</helpsystem>
+</view>
+
+<view name="basic, detailed, grid, video">
+
+<image name="background">
+	<path>./_art/gamebg.jpg</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>1</zIndex>
+</image>
+
+
+<helpsystem name="help">
+	<pos>.007 1.936</pos>
+    <textColor>00000000</textColor>
+    <iconColor>00000000</iconColor>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.016</fontSize>
+</helpsystem>
+
+</view>
+
+	
+<view name="basic">
+
+<image name="logo">
+    <path>./_art/logo.png</path>
+</image>
+
+<textlist name="gamelist">
+	<selectorColor>eac42830</selectorColor>
+	<selectedColor>f79420</selectedColor>
+	<primaryColor>EEEEEE</primaryColor>
+	<secondaryColor>eac428</secondaryColor>
+	<fontPath>./_art/comic.otf</fontPath>
+	<scrollSound>./_art/scroll_sound.wav</scrollSound>
+	<alignment>left</alignment>
+	<pos>0.04 0.23</pos>
+	<size>0.415 0.57</size>
+	<fontSize>0.022</fontSize>
+</textlist>
+
+</view>
+
+<view name="detailed, video">
+
+<image name="logo">
+    <path>./_art/logo.png</path>
+</image>
+
+<textlist name="gamelist">
+	<selectorColor>eac42830</selectorColor>
+	<selectedColor>f79420</selectedColor>
+	<primaryColor>EEEEEE</primaryColor>
+	<secondaryColor>eac428</secondaryColor>
+	<fontPath>./_art/comic.otf</fontPath>
+	<scrollSound>./_art/scroll_sound.wav</scrollSound>
+	<alignment>left</alignment>
+	<pos>0.04 0.23</pos>
+	<size>0.415 0.57</size>
+	<fontSize>0.022</fontSize>
+</textlist>
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.otf</fontPath>
+	<fontSize>0.024</fontSize>
+	<size>0.22 0.01</size>
+</text>
+
+<text name="md_developer, md_publisher, md_genre, md_playcount">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.otf</fontPath>
+	<fontSize>0.020</fontSize>
+	<size>0.18 0.02</size>
+</text>
+	
+<datetime name="md_releasedate, md_lastplayed">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.otf</fontPath>
+	<fontSize>0.020</fontSize>
+	<size>0.23 0.02</size>
+</datetime>
+
+<text name="md_lbl_rating">
+	<color>23232300</color>
+	<pos>0.750 2.455</pos>
+</text>
+
+	<rating name="md_rating">
+	<pos>0.17 0.837</pos>
+	<size>0.0975 0.0975</size>
+	<filledPath>./_art/full.png</filledPath>
+	<unfilledPath>./_art/empty.png</unfilledPath>
+	</rating>
+
+<text name="md_lbl_players">
+	<color>23232300</color>
+	<pos>0.762 1.12</pos>
+</text>
+
+	<text name="md_players">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/player.ttf</fontPath>
+	<size>0.18 0.02</size>
+	<pos>0.63 0.37</pos>
+	<fontSize>0.06</fontSize>
+	</text>
+
+<text name="md_lbl_genre">
+	<pos>0.53 0.11</pos>
+</text>
+
+	<text name="md_genre">
+	<pos>0.585 0.105</pos>
+	<size>0.14 0.02</size>
+	</text>
+
+<text name="md_lbl_developer">
+	<pos>0.74 2.94</pos>
+</text>
+	
+	<text name="md_developer">
+	<pos>0.53 0.936</pos>
+	</text>
+
+<text name="md_lbl_publisher">
+	<pos>0.745 2.30</pos>
+</text>
+	
+	<text name="md_publisher">
+	<pos>0.72 0.936</pos>
+	</text>
+
+<text name="md_lbl_releasedate">
+	<pos>0.74 2.36</pos>
+</text>
+
+	<datetime name="md_releasedate">
+	<pos>0.9 0.936</pos>
+	</datetime>
+
+<text name="md_lbl_playcount">
+	<pos>0.53 0.137</pos>
+</text>
+
+	<text name="md_playcount">
+	<fontPath>./_art/player.ttf</fontPath>
+	<size>0.18 0.02</size>
+	<pos>0.65 0.129</pos>
+	<fontSize>0.0470</fontSize>
+	</text>
+	
+<text name="md_lbl_lastplayed">
+	<pos>0.53 .166</pos>
+</text>
+
+<datetime name="md_lastplayed">
+	<pos>0.633 .165</pos>
+</datetime>
+
+</view>
+
+<view name="detailed">
+<image name="choose" extra="true">
+	<path>./_art/choose.png</path>
+	<origin>.5 .5</origin>
+	<pos>0.8582 0.1185</pos>
+	<maxSize>0.22 0.15</maxSize>
+</image>
+</view>
+
+<!-- Descriptions BEGIN-->
+
+<view name="detailed, video">
+<text name="md_description">
+	<pos>0.5295 0.658</pos>
+	<size>0.202 0.2635</size>
+	<color>232323</color>
+	<fontPath>./_art/comic.otf</fontPath>
+	<fontSize>0.022</fontSize>
+	<alignment>left</alignment>
+	<forceUppercase>0</forceUppercase>
+	<lineSpacing>1</lineSpacing>
+</text>
+
+</view>
+
+<!-- Descriitions END -->
+
+</theme>
